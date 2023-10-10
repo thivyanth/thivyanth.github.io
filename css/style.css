@@ -49,6 +49,20 @@
 
 /* Basic Codes */
 
+/* This will hide all the direct children of the sections */
+#main_section_container_1 > *,
+#main_section_container_2 > *,
+#main_section_container_3 > * {
+    display: none;
+}
+
+/* This will then override the above rule and only show the main_text_item for each section */
+#main_section_container_1 > .main_text_item,
+#main_section_container_2 > .main_text_item,
+#main_section_container_3 > .main_text_item {
+    display: block;
+}
+
 body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
@@ -97,6 +111,10 @@ body {
   border-radius: 50%;
   margin-bottom: 0.5em;
 }
+
+
+
+
 
 .header_text h1 {
   color: var(--title_color);
