@@ -49,6 +49,19 @@
 
 /* Basic Codes */
 
+
+
+body {
+  font: var(--font_size) var(--font_family);
+  font-weight: 400;
+  line-height: 1.5;
+  background: var(--background_color) var(--background_image) no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 /* This will hide all the direct children of the sections */
 #main_section_container_1 > *,
 #main_section_container_2 > *,
@@ -61,17 +74,6 @@
 #main_section_container_2 > .main_text_item,
 #main_section_container_3 > .main_text_item {
     display: block;
-}
-
-body {
-  font: var(--font_size) var(--font_family);
-  font-weight: 400;
-  line-height: 1.5;
-  background: var(--background_color) var(--background_image) no-repeat center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .flex_column_center {
